@@ -14,6 +14,6 @@ class KeybaseCompletion < Formula
 
   test do
     assert_match "complete -F _keybase keybase",
-                 shell_output("source #{bash_completion}/yarn && complete -p yarn")
+                 shell_output("source #{bash_completion}/keybase && complete -p keybase")
   end
 end
