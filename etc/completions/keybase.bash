@@ -4,7 +4,7 @@ _keybase()
 {
     COMPREPLY=()
     local cur="${COMP_WORDS[COMP_CWORD]}"
-    completions=$(${COMP_WORDS[@]:0:$COMP_CWORD} --generate-bash-completion)
+    completions=$("${COMP_WORDS[@]:0:$COMP_CWORD}" --generate-bash-completion)
     COMPREPLY=( $(compgen -W "$completions" -- "$cur") )
     return 0
 }
