@@ -1,4 +1,4 @@
-name: CI
+name: Test
 
 on: [push, pull_request]
 
@@ -10,6 +10,8 @@ jobs:
     - name: Set up Git repository
       uses: actions/checkout@v2
 
-    - name: Reset system Homebrew installation
-      if: matrix.os == 'macOS-latest'
-      run: brew update-reset
+    - run: brew update-reset
+
+    - run: brew style jasonkarns/homebrew
+    
+    - run: brew audit jasonkarns/homebrew
