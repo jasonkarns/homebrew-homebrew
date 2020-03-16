@@ -1,15 +1,14 @@
 class KeybaseCompletion < Formula
   desc "Bash completion for Keybase"
-  homepage "https://github.com/jasonkarns/homebrew-homebrew"
-  url "https://github.com/jasonkarns/homebrew-homebrew.git",
-      :revision => "794f497f0cdc7e5723b9efd8ba1cc51392a7f07d"
-  version "1.0.0"
-  head "https://github.com/jasonkarns/homebrew-homebrew.git"
+  homepage "https://github.com/keybase/client/pull/11261"
+  url "https://raw.githubusercontent.com/keybase/client/495ff6aeb0bb71da2539641b082faf98b85210dd/completion/bash"
+  sha256 "bbbe0a6f9d3dce86d5656907b7598f34ac3841e176c271cef14516af4df7f4fa"
+  version "1.0.1"
 
   bottle :unneeded
 
   def install
-    bash_completion.install "etc/completions/keybase.bash" => "keybase"
+    bash_completion.install "bash" => "keybase"
   end
 
   test do
