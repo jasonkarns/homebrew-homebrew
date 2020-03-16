@@ -1,36 +1,17 @@
 # homebrew-homebrew
 
-This is a Homebrew tap providing miscellaneous formulae that I find useful.
+This is a [Homebrew Tap](https://docs.brew.sh/Taps) providing miscellaneous formulae I find useful.
 
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-**Table of Contents**
+## How do I install these formulae?
+`brew install jasonkarns/homebrew/<formula>`
 
-- [Installing Formulae](#installing-formulae)
-- [Troubleshooting & Documentation](#troubleshooting--documentation)
+Or `brew tap jasonkarns/homebrew` and then `brew install <formula>`.
 
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+Or install via URL (which will not receive updates):
 
-## Installing Formulae
+```
+brew install https://raw.githubusercontent.com/jasonkarns/homebrew-homebrew/master/Formula/<formula>.rb
+```
 
- `brew tap jasonkarns/homebrew` and then `brew install <formula>`.
- (Or `brew install jasonkarns/homebrew/<formula>`.)
- You only need to tap the repository once.
-
- You can also install via URL:
-
- ```
- brew install https://raw.githubusercontent.com/jasonkarns/homebrew-homebrew/master/<formula>.rb
- ```
-
- ## Troubleshooting & Documentation
-
- - `brew update` and `brew doctor`.
- - [Homebrew Troubleshooting Checklist](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Troubleshooting.md#troubleshooting)
- - `brew help`
- - `man brew`
- - [Homebrew documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme)
-
- ## Contributing
-
- Have a look at the [Homebrew Formula Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md).  In particular, your formula should pass `brew audit --strict <formula>` and `brew test <formula>`.
+## Documentation
+`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
