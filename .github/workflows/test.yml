@@ -7,7 +7,6 @@ jobs:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v2
-    - run: brew style .
     - run: brew audit --strict Formula/*
     - run: brew install Formula/*
     - run: brew test Formula/*
