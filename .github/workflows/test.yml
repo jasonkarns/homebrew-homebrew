@@ -6,12 +6,6 @@ jobs:
   test:
     runs-on: macos-latest
     steps:
-    
-    - name: Set up Git repository
-      uses: actions/checkout@v2
-
-    - run: brew update-reset
-
-    - run: brew style jasonkarns/homebrew
-    
-    - run: brew audit jasonkarns/homebrew
+    - uses: actions/checkout@v2
+    - run: brew style .
+    - run: brew audit --strict Formula/*
