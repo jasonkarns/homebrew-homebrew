@@ -1,5 +1,5 @@
 on: push
-name: Table of Contents
+name: ToC Generator
 jobs:
   generate:
     runs-on: ubuntu-latest
