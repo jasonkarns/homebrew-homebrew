@@ -1,4 +1,4 @@
-# homebrew-homebrew
+# jasonkarns/homebrew
 
 This is a [Homebrew Tap](https://docs.brew.sh/Taps) providing miscellaneous formulae I find useful.
 
