@@ -2,31 +2,35 @@
 
 This is a Homebrew tap providing miscellaneous formulae that I find useful.
 
-<!-- toc -->
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+**Table of Contents**
 
+- [Installing Formulae](#installing-formulae)
+- [Troubleshooting & Documentation](#troubleshooting--documentation)
 
-<!-- tocstop -->
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
 ## Installing Formulae
 
-`brew tap jasonkarns/homebrew` and then `brew install <formula>`.
-(Or `brew install jasonkarns/homebrew/<formula>`.)
-You only need to tap the repository once.
+ `brew tap jasonkarns/homebrew` and then `brew install <formula>`.
+ (Or `brew install jasonkarns/homebrew/<formula>`.)
+ You only need to tap the repository once.
 
-You can also install via URL:
+ You can also install via URL:
 
-```
-brew install https://raw.githubusercontent.com/jasonkarns/homebrew-homebrew/master/<formula>.rb
-```
+ ```
+ brew install https://raw.githubusercontent.com/jasonkarns/homebrew-homebrew/master/<formula>.rb
+ ```
 
-## Troubleshooting & Documentation
+ ## Troubleshooting & Documentation
 
-- `brew update` and `brew doctor`.
-- [Homebrew Troubleshooting Checklist](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Troubleshooting.md#troubleshooting)
-- `brew help`
-- `man brew`
-- [Homebrew documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme)
+ - `brew update` and `brew doctor`.
+ - [Homebrew Troubleshooting Checklist](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Troubleshooting.md#troubleshooting)
+ - `brew help`
+ - `man brew`
+ - [Homebrew documentation](https://github.com/Homebrew/homebrew/tree/master/share/doc/homebrew#readme)
 
-## Contributing
+ ## Contributing
 
-Have a look at the [Homebrew Formula Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md).  In particular, your formula should pass `brew audit --strict <formula>` and `brew test <formula>`.
+ Have a look at the [Homebrew Formula Cookbook](https://github.com/Homebrew/homebrew/blob/master/share/doc/homebrew/Formula-Cookbook.md).  In particular, your formula should pass `brew audit --strict <formula>` and `brew test <formula>`.
