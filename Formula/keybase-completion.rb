@@ -2,7 +2,7 @@ class KeybaseCompletion < Formula
   desc "Bash completion for Keybase"
   homepage "https://github.com/jasonkarns/homebrew-homebrew"
   url "https://github.com/jasonkarns/homebrew-homebrew.git",
-    :revision => "794f497f0cdc7e5723b9efd8ba1cc51392a7f07d"
+      :revision => "794f497f0cdc7e5723b9efd8ba1cc51392a7f07d"
   version "1.0.0"
   head "https://github.com/jasonkarns/homebrew-homebrew.git"
 
