@@ -1,6 +1,10 @@
 class KeybaseCompletion < Formula
   desc "Bash completion for Keybase"
   homepage "https://github.com/jasonkarns/homebrew-homebrew"
+  url "https://github.com/jasonkarns/homebrew-homebrew.git",
+    :revision => "794f497f0cdc7e5723b9efd8ba1cc51392a7f07d"
+  version "1.0.0"
+  head "https://github.com/jasonkarns/homebrew-homebrew.git"
 
   bottle :unneeded
 
@@ -9,7 +13,7 @@ class KeybaseCompletion < Formula
   end
 
   test do
-    assert_match "complete -F _yarn yarn",
-      shell_output("source #{bash_completion}/yarn && complete -p yarn")
+    assert_match "complete -F _keybase keybase",
+                 shell_output("source #{bash_completion}/yarn && complete -p yarn")
   end
 end
