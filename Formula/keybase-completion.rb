@@ -5,8 +5,6 @@ class KeybaseCompletion < Formula
   version "1.0.1"
   sha256 "bbbe0a6f9d3dce86d5656907b7598f34ac3841e176c271cef14516af4df7f4fa"
 
-  bottle :unneeded
-
   def install
     bash_completion.install "bash" => "keybase"
   end

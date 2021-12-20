@@ -6,7 +6,6 @@ class DotnetCompletion < Formula
   sha256 "90c1931ceb1f91b3535147761668b854e90c042a7fc138b7fec08b8a18961afc"
   license "MIT"
 
-  bottle :unneeded
   def install
     bash_completion.install "register-completions.bash" => "dotnet"
   end
