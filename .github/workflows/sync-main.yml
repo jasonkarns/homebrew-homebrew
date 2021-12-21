@@ -1,3 +1,13 @@
+# This workflow is intended to support repositories that have changed their default branch (typically, from `master` to `main`).
+# It will force-push to `master` whenever `main` is updated.
+# Assuming the default branch has already been renamed on GitHub; the following may be run in any local clones:
+#     ```sh
+#     git branch -m master main
+#     git fetch origin
+#     git branch -u origin/main main
+#     git remote set-head origin -a
+#     ```
+
 name: Sync Branches
 on:
   push: { branches: main }
