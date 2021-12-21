@@ -1,0 +1,12 @@
+name: Sync Branches
+on:
+  push: { branches: main }
+  workflow_dispatch:
+
+jobs:
+  master:
+    runs-on: ubuntu-latest
+    if: github.ref == 'refs/heads/main'
+    steps:
+      - uses: actions/checkout@v2
+      - run: git push --force origin HEAD:refs/heads/master
