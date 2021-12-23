@@ -7,6 +7,11 @@ class DotnetCompletion < Formula
   license "MIT"
   revision 1
 
+  bottle do
+    root_url "https://github.com/jasonkarns/homebrew-homebrew/releases/download/dotnet-completion-3.1.7_1"
+    sha256 cellar: :any_skip_relocation, big_sur: "7312b3e4026a1d1c28cb24ab831b0b7a975df5940a2326bed440dd18bcacf466"
+  end
+
   def install
     bash_completion.install "register-completions.bash" => "dotnet"
   end
