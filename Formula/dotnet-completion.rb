@@ -5,7 +5,7 @@ class DotnetCompletion < Formula
   version "3.1.7"
   sha256 "90c1931ceb1f91b3535147761668b854e90c042a7fc138b7fec08b8a18961afc"
   license "MIT"
-  revision 2
+  revision 3
 
   bottle do
     root_url "https://github.com/jasonkarns/homebrew-homebrew/releases/download/dotnet-completion-3.1.7_1"
