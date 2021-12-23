@@ -2,17 +2,16 @@ name: release
 on:
   pull_request_target:
     types: [ closed ]
-
 jobs:
-  bottle:
+  pr-pull:
     if: github.event.pull_request.merged
     runs-on: ubuntu-latest
     steps:
       - name: Set up Homebrew
         uses: Homebrew/actions/setup-homebrew@master
 
-      # - name: Set up git
-      #   uses: Homebrew/actions/git-user-config@master
+      - name: Set up git
+        uses: Homebrew/actions/git-user-config@master
 
       - name: Pull bottles
         env:
@@ -22,11 +21,11 @@ jobs:
           PULL_REQUEST: ${{ github.event.pull_request.number }}
         run: brew pr-pull --debug --tap=$GITHUB_REPOSITORY $PULL_REQUEST
 
-      # - name: Push commits
-      #   uses: Homebrew/actions/git-try-push@master
-      #   with:
-      #     token: ${{ github.token }}
-      #     branch: main
+      - name: Push commits
+        uses: Homebrew/actions/git-try-push@master
+        with:
+          token: ${{ github.token }}
+          branch: main
 
       # - name: Delete branch
       #   if: github.event.pull_request.head.repo.fork == false
