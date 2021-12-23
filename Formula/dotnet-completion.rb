@@ -4,8 +4,8 @@ class DotnetCompletion < Formula
   url "https://raw.githubusercontent.com/dotnet/sdk/e80cf181f715697b88f18845d095bb9b623f325a/scripts/register-completions.bash"
   version "3.1.7"
   sha256 "90c1931ceb1f91b3535147761668b854e90c042a7fc138b7fec08b8a18961afc"
-  revision 1
   license "MIT"
+  revision 1
 
   def install
     bash_completion.install "register-completions.bash" => "dotnet"
