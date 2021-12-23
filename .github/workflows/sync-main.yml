@@ -8,7 +8,7 @@
 #     git remote set-head origin -a
 #     ```
 
-name: Sync Branches
+name: sync main
 on:
   push: { branches: main }
   workflow_dispatch:
