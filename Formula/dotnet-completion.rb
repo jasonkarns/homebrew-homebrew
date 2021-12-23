@@ -13,6 +13,6 @@ class DotnetCompletion < Formula
 
   test do
     assert_match "complete -f -F _dotnet_bash_complete dotnet",
-                 shell_output("source #{bash_completion}/dotnet && complete -p dotnet")
+      shell_output(". #{bash_completion}/dotnet && complete -p dotnet")
   end
 end
