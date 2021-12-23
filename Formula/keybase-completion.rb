@@ -4,7 +4,7 @@ class KeybaseCompletion < Formula
   url "https://raw.githubusercontent.com/keybase/client/495ff6aeb0bb71da2539641b082faf98b85210dd/completion/bash"
   version "1.0.1"
   sha256 "bbbe0a6f9d3dce86d5656907b7598f34ac3841e176c271cef14516af4df7f4fa"
-  revision 1
+  revision 2
 
   bottle do
     root_url "https://github.com/jasonkarns/homebrew-homebrew/releases/download/keybase-completion-1.0.1_1"
