@@ -2,7 +2,7 @@ class RakeCompletion < Formula
   desc "Bash completion for Rake"
   homepage "https://github.com/mernen/completion-ruby"
   url "https://github.com/mernen/completion-ruby.git",
-    :revision => "710d0699ee710e181da90c4f3af8b39e4b5c81de"
+    revision: "ae3da1ac62a7e08e22574d91c7dd3c433e9ac89d"
   version "2"
 
   head "https://github.com/mernen/completion-ruby.git"
